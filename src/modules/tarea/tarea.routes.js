@@ -13,7 +13,7 @@ router.route('/')
 *         200:
 *           description: Arreglo con una la lista de tareas
 */
-.get(controller.getAll()) 
+.get(controller.getAll) 
   /**
    * @swagger
    *   /tareas:
@@ -57,7 +57,7 @@ router.route('/')
    *         500:
    *           description: String con mensaje de error
    */
-.post(controller.create());
+.post(controller.create);
 
 router.route('/:id')
   /**
@@ -78,7 +78,7 @@ router.route('/:id')
    *         500:
    *           description: String con el mensaje de error
    */
-.get(controller.getOne())
+.get(controller.getOne)
   /**
    * @swagger
    *   /tareas/{id}:
@@ -125,7 +125,7 @@ router.route('/:id')
    *         500:
    *           description: String con mensaje de erro
    */
-.put(controller.update())
+.put(controller.update)
   /**
    * @swagger
    *   /tareas/{id}:
@@ -144,6 +144,6 @@ router.route('/:id')
    *         500:
    *           description: String con mensaje de error
    */
-.delete(controller.delet());
+.delete(controller.delete);
 
 module.exports = router;

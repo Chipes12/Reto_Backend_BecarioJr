@@ -23,6 +23,11 @@ class Tarea extends Model {
             }
         });
     }
+    a(){
+        return new Promise((accept, reject) => {
+            accept("Aguas");
+        })
+    }
 }
 
 module.exports = Tarea;
