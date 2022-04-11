@@ -1,6 +1,5 @@
 const express = require('express');
 const dotenv = require('dotenv');
-
 const cors = require('cors');
 const swaggerJsDoc = require('swagger-jsdoc');
 const swaggerUi = require('swagger-ui-express');
@@ -14,15 +13,14 @@ const app = express();
 const port = process.env.PORT || 3000;
 
 app.use(cors());
-app.use(express.json());
-app.use('/', apiRoutes);
+//app.use('/', apiRoutes);
 
 const swaggerOptions = {
     swaggerDefinition: {
         swagger: '2.0',
         info: {
-            title: 'Documentacon tareas API',
-            description: 'Funciones de las tareas',
+            title: 'Reto BackEnd jr',
+            description: 'Administrador de tareas',
             version: '1.0.0',
             servers: ['http://localhost:'+port]
         }

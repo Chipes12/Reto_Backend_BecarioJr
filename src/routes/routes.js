@@ -1,6 +1,6 @@
 const router = require('express').Router();
 
-const tareasRoutes = require('../models/tarea/tarea.routes');
+const tareasRoutes = require('../modules/tarea/tarea.routes');
 
 router.use('/tareas', tareasRoutes);
 
